@@ -1,9 +1,17 @@
 @import "fonts";
 @import "rouge-github";
 @import "colors";
+@import "default_colors";
+
+$body-background: $cod-grey !default;
+$body-foreground: $gallery !default;
+$header: $conifer !default;
+$blockquote-color: $silver-chalice !default;
+$blockquote-border: $dove-grey !default;
+$container-max-width: 1000px;
 
 body {
-  background-color: var(--clr-bg);
+  background-color: $body-background;
   padding:50px;
   font: 15px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--clr-text);
@@ -11,7 +19,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--clr-h1-and-bold);
+  color: $conifer;
   margin:0 0 20px;
 }
 
@@ -28,11 +36,11 @@ h1 {
 }
 
 h2 {
-  color: var(--clr-h2);
+  color: $conifer;
 }
 
 h3, h4, h5, h6 {
-  color: var(--clr-h-3-6);
+  color: $conifer;
 }
 
 a {
